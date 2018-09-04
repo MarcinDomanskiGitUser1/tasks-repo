@@ -1,6 +1,5 @@
 package com.crud.tasks.controller;
 
-
 import com.crud.tasks.domain.TaskDto;
 import com.crud.tasks.mapper.TaskMapper;
 import com.crud.tasks.service.DbService;
@@ -11,6 +10,7 @@ import java.util.List;
 
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
+@CrossOrigin(origins = "*")
 @RequestMapping("/v1/task")
 @RestController
 public class TaskController {
