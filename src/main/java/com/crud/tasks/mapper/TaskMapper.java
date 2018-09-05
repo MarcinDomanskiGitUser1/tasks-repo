@@ -26,7 +26,10 @@ public class TaskMapper {
     }
     public List<TaskDto> mapToTaskDtoList(final List<Task> taskList) {
         return taskList.stream()
-                .map(task -> new TaskDto(task.getId(), task.getTitle(), task.getContent()))
+                .map(task -> new TaskDto(
+                        task.getId(),
+                        task.getTitle(),
+                        task.getContent()))
                 .collect(Collectors.toList());
     }
 }
